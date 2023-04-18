@@ -19,30 +19,36 @@ const Multiply = (skaitlis1, skaitlis2) => {
 }
 
 const Divide = (skaitlis1, skaitlis2) => {
+    if(Number(skaitlis2) === 0){
+        alert('Nevar dalīt ar nulli')
+        return 'Nav atbildes'
+    }
     return Number(skaitlis1) / Number(skaitlis2)
+    
+}
+
+const resetValues = () => {
+    input1.value = ""
+    input2.value = ""
 }
 
 plusButton.addEventListener('click', () => {
     result.innerHTML = Add(input1.value, input2.value)
 
-    input1.value = ""
-    input2.value = ""
+    resetValues();
 })
 minusButton.addEventListener('click', () => {
     result.innerHTML = Subtract(input1.value, input2.value)
 
-    input1.value = ""
-    input2.value = ""
+    resetValues();
 })
 multiplyButton.addEventListener('click', () => {
     result.innerHTML = Multiply(input1.value, input2.value)
 
-    input1.value = ""
-    input2.value = ""
+    resetValues();
 })
 divideButton.addEventListener('click', () => {
     result.innerHTML = Divide(input1.value, input2.value)
 
-    input1.value = ""
-    input2.value = ""
+    resetValues();
 })

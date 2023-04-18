@@ -1,3 +1,14 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    background-color: #ffffe0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
