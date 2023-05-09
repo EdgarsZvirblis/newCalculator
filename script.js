@@ -1,4 +1,4 @@
-const input1 = document.querySelector('.js-teksts');
+const input1 = document.querySelector('.js-teksts1');
 const input2 = document.querySelector('.js-teksts2');
 const plusButton = document.querySelector('.js-plus');
 const minusButton = document.querySelector('.js-minus');
